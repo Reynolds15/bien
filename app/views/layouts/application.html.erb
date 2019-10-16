@@ -11,26 +11,26 @@
 
   <body>
     <header>
-      <h1>
-        <%= link_to root_path do %>
-        <% image_tag "bien-logo.svg" %>
-        <% end %>
-      </h1>
+      <nav>
+        <h1>
+          <%= link_to root_path do %>
+            <% image_tag "bien-logo.svg" %>
+          <% end %>
+        </h1>
+      </nav>
 
+      <nav>
+        <%= link_to "Add a review", new_review_path %>
+      </nav>
 
-      <h2>The best restaurants in the world</h1>
-        <nav>
-          <%= link_to "Add a review", new_review_path %>
-        </nav>
     </header>
 
-
-
-
+  <main>
     <%= yield %>
+  </main>
 
     <footer>
-      <p>Copyright Boobies R Us 2019</p>
+      <p>Copyright Bien 2019</p>
     </footer>
   </body>
 </html>
