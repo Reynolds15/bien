@@ -95,7 +95,7 @@ end
 
 
   def form_params
-    params.require(:review).permit(:title, :restaurant, :body, :score, :ambience, :price, :cuisine, :address)
+    params.require(:review).permit(:title, :restaurant, :address, :body, :cuisine, :price, :score, :ambience)
   end
 
 end

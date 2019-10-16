@@ -5,8 +5,17 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
+
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+end
+
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -31,6 +40,11 @@ gem 'jbuilder', '~> 2.5'
 # add in our geocoding
 gem 'geocoder'
 
+# add in simple form
+gem "simple_form"
+
+# make our filters active
+gem "active_link_to"
 
 
 # Use ActiveStorage variant
