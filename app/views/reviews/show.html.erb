@@ -13,6 +13,15 @@
   </div>
 <% end %>
 
+<div class="price">
+  Price: <%= @review.price %>
+</div>
+
+<div class="cuisine">
+  Cuisine: <%= @review.cuisine %>
+</div>
+
+
 <div class="body">
   <%= simple_format @review.body %>
 </div>
